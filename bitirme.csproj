@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3EF0600-94E5-498E-BBD7-03E3D0D3C000}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bitirme</RootNamespace>
+    <AssemblyName>bitirme</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.2" />
+    <Reference Include="DevExpress.Data.v16.2" />
+    <Reference Include="DevExpress.Utils.v16.2" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v16.2" />
+    <Reference Include="DevExpress.Printing.v16.2.Core" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmadisyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadisyon.Designer.cs">
+      <DependentUpon>frmadisyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadmingiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmingiris.Designer.cs">
+      <DependentUpon>frmadmingiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmanasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmanasayfa.Designer.cs">
+      <DependentUpon>frmanasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgiris.Designer.cs">
+      <DependentUpon>frmgiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmkampanya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmkampanya.Designer.cs">
+      <DependentUpon>frmkampanya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmasaekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmasaekleme.Designer.cs">
+      <DependentUpon>frmmasaekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmekanalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmekanalan.Designer.cs">
+      <DependentUpon>frmmekanalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmenu.Designer.cs">
+      <DependentUpon>frmmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmenudüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmenudüzenle.Designer.cs">
+      <DependentUpon>frmmenudüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmonsiparisekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmonsiparisekle.Designer.cs">
+      <DependentUpon>frmonsiparisekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpersonel.Designer.cs">
+      <DependentUpon>frmpersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsubeayarlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsubeayarlari.Designer.cs">
+      <DependentUpon>frmsubeayarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmyönetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmyönetici.Designer.cs">
+      <DependentUpon>frmyönetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmyöneticilistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmyöneticilistele.Designer.cs">
+      <DependentUpon>frmyöneticilistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmşubelistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmşubelistele.Designer.cs">
+      <DependentUpon>frmşubelistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmadisyon.resx">
+      <DependentUpon>frmadisyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadmingiris.resx">
+      <DependentUpon>frmadmingiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmanasayfa.resx">
+      <DependentUpon>frmanasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgiris.resx">
+      <DependentUpon>frmgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmkampanya.resx">
+      <DependentUpon>frmkampanya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmasaekleme.resx">
+      <DependentUpon>frmmasaekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmekanalan.resx">
+      <DependentUpon>frmmekanalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmenu.resx">
+      <DependentUpon>frmmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmenudüzenle.resx">
+      <DependentUpon>frmmenudüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmonsiparisekle.resx">
+      <DependentUpon>frmonsiparisekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpersonel.resx">
+      <DependentUpon>frmpersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsubeayarlari.resx">
+      <DependentUpon>frmsubeayarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmyönetici.resx">
+      <DependentUpon>frmyönetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmyöneticilistele.resx">
+      <DependentUpon>frmyöneticilistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmşubelistele.resx">
+      <DependentUpon>frmşubelistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1915.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1ana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\but.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geri1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20c4da4dcfeb30e0f04126e62e0f5226.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
